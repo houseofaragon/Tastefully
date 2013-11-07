@@ -1,0 +1,120 @@
+
+
+
+
+
+
+
+http://www.webappers.com/2011/11/21/create-an-interactive-map-using-html5-jquery/
+
+MAIN PAGE:
+	5 herbs per row
+	section with Map
+	section with image about roots
+	section with timeline about when herbs grow best
+
+	what herbs are paired best with what food
+
+
+	(scrape sites about herbs?)
+	(scrape recipes with herb?)
+
+
+/*------------------ TOP HERBS -----------------*/
+1. Basil
+	http://en.wikipedia.org/wiki/Basil
+	Origin: India
+	The word basil comes from the Greek βασιλεύς (basileus), meaning "king",
+
+	~ schwartz says its from Egypt
+	http://www.piglette.com/gardening/herbs/basil/
+	- iran or india
+	- maybe africa
+
+3. Chives
+	Northern Europe
+	http://en.wikipedia.org/wiki/Chives#History_and_cultural_importance
+	Asia and Europe
+
+4. Fennel
+	mediterranean
+	http://en.wikipedia.org/wiki/Fennel
+
+5. Cilantro
+	http://en.wikipedia.org/wiki/Cilantro#Leaves
+	 Coriander is native to regions spanning from southern Europe and North Africa to southwestern Asia. 
+	 Mediteranean region of Europe
+	 southern Europe and North Africa to southwestern Asia
+
+6. Dill
+	It is native to the eastern Mediterranean region and western Asia.
+	http://homecooking.about.com/od/foodhistory/a/dillhistory.htm
+	
+7. Kaffir Lime Leaves
+8. Marjoram
+9. Mint
+Known to have originated in Asia and the Mediterranean region
+
+10. Oregano
+It is native to warm-temperate western and southwestern Eurasia and the Mediterranean region.
+
+11. Parsley
+native to the central Mediterranean region (southern Italy, Algeria, and Tunisia), naturalized elsewhere in Europe, and widely cultivated as an herb, a spice, and a vegetab
+
+12. Rosemary
+native to the Mediterranean region.
+
+13. Sage
+ is native to the Mediterranean region
+
+16. Sage
+ Native to the Mediterranean region, thyme was brought to Britain by the Romans.
+
+17. Oregano
+18. Garlic
+t is native to Central Asia, and has long been a staple in the Mediterranean region, as well as a frequent seasoning in Asia, Africa, and Europe. 
+
+19. Bay Leaf
+20. Arugala
+
+
+**** http://www.dummies.com/how-to/content/herbal-remedies-for-dummies-cheat-sheet.html
+
+/*------------------ Resources -----------------*/
+
+http://www.herbsociety.org/herbs/documents/BeginnersHerbGarden_pdf.pdf
+
+http://www.thechroniclesofhome.com/2013/05/my-favorite-herbs-for-cooking-weekend.html
+
+http://www.rd.com/slideshows/10-herbs-to-grow/
+
+http://www.wvu.edu/~agexten/hortcult/herbs/ne208hrb.htm
+
+***
+http://www.savvygardener.com/Features/herbs.html
+
+http://illustratedbites.wordpress.com/2012/05/08/add-some-flavor/
+
+http://herbgardening.com/growingbasil.htm
+
+http://www.epicurious.com/articlesguides/seasonalcooking/farmtotable/visualguidefreshherbs
+
+/*---------------- Herb Pairings -----------------*/
+
+http://suite101.com/article/herb-pairing-list-a94302
+http://gardening.about.com/od/recipesforfreshherbs/a/Cooking_Herbs.htm
+http://www.culinate.com/mix/dinner_guest/a_culinary_herb_primer
+http://risingriverfarm.com/a-comprehensive-guide-to-herb-and-vegetable-pairing
+http://www.finecooking.com/articles/herb-food-pairings.aspx
+
+/*------------------ Herb Roots -----------------*/
+http://reclaimgrowsustain.com/content/how-deep-does-it-root
+
+
+/*---------- Vis ------------*/
+http://bl.ocks.org/Caged/6476579
+
+
+
+
+/*--------- Ideas -------------*/

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8"></meta>
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"></meta>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+	<meta content="A site for people who like herbs." name="description"></meta>
+	<meta content="Tasteful.ly" name="Karen C. Aragon"></meta>
+	<link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
+	<link href="css/style.css" type="text/css" rel="stylesheet"></link>
+<head>
+	<body>
+	<div class="container">
+<!-- Header Content -->
+		<header class="clearfix">
+			<h1 class="left" > <span>Tasteful</span>.ly </h1> 
+
+<!-- Main Navigation -->
+			<nav class="right" >
+				<a class="bp-icon bp-icon-drop" data-info="Recipes" href="#recipe"> 
+					<span> Recipes </span> 
+				</a>
+				<a class="bp-icon bp-icon-drop" data-info="Date Visualizations" href="#visualization"> 
+					<span> Data Visualizations </span> 
+ 				</a>
+				<a class="bp-icon bp-icon-drop" data-info="Blog" href="http://tasteful.ly/">
+					<span> Blog </span> 
+				</a>
+				<a class="bp-icon bp-icon-archive" data-info="Contact" href="#visualization"> 
+					<span> Contact </span> 
+				</a>
+			</nav>
+		<h4 class="left"> A site for people who like to nerd out about the tastyness of herbs. </h4> 
+
+		</header>
+<!-- Rotating Info -->
+
+</div><!-- end of slideshow-->
+			<div class="clearfix bg-slider" id="">
+				<p> Get Creative with your favorite herbs. </p>
+
+				<div class="recipe clearfix current" id="Tip-1">
+							<img class="left" src="images/parsely.png"></img> 
+							<p  class="tip"> Tip <span>#1: </span>Don't throw away parsely (or any leftover herbs). </p>
+							<p class="tip-details">
+								I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter.<br/> In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+							</p>
+				</div>
+				<div class="recipe clearfix" id="Tip-2">
+							<img class="left" src="images/parsely.png"></img> 
+							<p  class="tip"> Tip <span>#2: </span>Add herbs like basil or mint to plain old ice water. </p>
+							<p class="tip-details">
+								I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter.<br/> In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+							</p>
+				</div>
+				<div class="recipe clearfix" id="Tip-3">
+							<img class="left" src="images/parsely.png"></img> 
+							<p  class="tip"> Tip <span>#3: </span>Add herbs like mint or basil into your favorite fruit salads. </p>
+							<p class="tip-details">
+								I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter.<br/> In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+							</p>
+				</div>
+				<div class="recipe clearfix" id="Tip-4">
+							<img class="left" src="images/parsely.png"></img> 
+							<p  class="tip"> Tip <span>#4: </span>Dry leftover herbs like parsely and thyme. </p>
+							<p class="tip-details">
+								I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter.<br/> In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+							</p>
+				</div>
+			<div id="recipe-selector">
+				<em> Select an idea. </em>
+				<nav>
+					<a href="#" class="activeSlide" id="tip1">1</a>
+					<a href="#"  class="" id="tip2">2</a>
+					<a href="#"  class="" id="tip3">3</a>
+					<a href="#"  class="" id="tip4">4</a>
+				</nav>
+			</div>
+			</div>
+
+<!-- Switcher -->
+			<div class="main">
+				<div id="cbp-vm" class="switcher view-grid">
+					<div class="options">
+						<a href="#" class="icon grid selected" data-view="view-grid">Grid View</a>
+						<a href="#" class="icon list" data-view="view-list">List View</a>
+					</div>
+	<!-- Main List -->
+					<ul id="herb_list_one"></ul>
+	<!-- D3 Map -->	
+					<div class="clearfix" id="visualization">
+						<h3> Herbal Anthropology </h3>
+						<p class="left"> Click around to discover where herbs originate from </p>
+						<div class="right" id="map"></div>
+					</div>
+					<ul id="herb_list_two"></ul>
+				</div>
+			</div><!-- /main -->
+			<div class="call clearfix">
+				<p> Ideas of your own? </p>
+					<p class="details">
+						<span> Don't keept it to yourself, share it with the world!</span><br/>
+						Let the world know how awesome and creative you are. By sharing your ideas, whether it be a clever way to store herbs or a new and tasty recipe your brilliant mind came up with, you help to enrich the overall culinary and creative experiences of your fellow herbal nerds.
+					</p>
+					<a class="add" href="#">
+							Get in Touch
+					</a>
+			</div>
+		<div id="filter"></div>
+		</div><!-- /container -->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="js/d3.v3.js" charset="utf-8"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpViewModeSwitch.js"></script>
+		<!-- map -->
+ 		<script src="js/topojson.v0.min.js"></script>
+ 		<script src="js/tastefully.js"></script>
+ 		<script src="data/herb.json"></script>
+ 		<script>
+
+    	</script>
+	</body>
+</html>

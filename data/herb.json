@@ -1,0 +1,121 @@
+{
+        
+            "basil": {
+                "native": "tropical asia",
+                "height": 24,
+                "treat": "well-drained soil and lots of sun",
+                "family": "labiatae",
+                "species": "ocimum basilicum",
+                "uses": "vinegars, pesto sauce, oil, garlic,tomatoes, eggplant",
+                "medical": "mosquito-repellent, ringworm, inset bites, acne, aids digestion",
+                "characteristics": "pink or white flowers, spicy aroma, oval pointed leaf, puckered leaf surface"
+            
+        },
+        
+            "cilantro": {
+                "native": "western asia, north africa",
+                "height": 20,
+                "treat": "wasteland, rich soil, sun",
+                "family": "umbelliferae",
+                "species": "coriandrum sativum",
+                "uses": "salsas, guacamole, soups, curries",
+                "medical": "mild sedative, helps migraines, aids digestion, reduces flatulence, eases cramps",
+                "characteristics": "feathery upper leaves, broad incised lower leaves"
+            
+        },
+        
+            "dill": {
+                "native": "south europe to India",
+                "height": 24,
+                "treat": "rich well-drained soil",
+                "family": "umbelliferae",
+                "species": "anethum graveolens",
+                "uses": "vinegars, pickles, potato salad, meats",
+                "medical": "aids digestion, reduces flatulence, hiccups, stomach pains, insomnia",
+                "characteristics": "feathery foliage"
+            
+        },
+        
+            "mint": {
+                "native": "eurasia,africa",
+                "height": 47,
+                "treat": "rich soils, sun, moisture",
+                "family": "labiatae",
+                "species": "mentha species",
+                "uses": "sauces, vinegars, desserts, cigarettes, toothpastes, ointments, cold remedies",
+                "medical": "treats shock, nausea, headaches, improves constipation",
+                "characteristics": "purple stem, wrinkly leaf, minty scent"
+            
+        },
+        
+            "oregano": {
+                "native": "europe",
+                "height": 35,
+                "treat": "open woodland, hillsides, rough grassland",
+                "family": "labiatae",
+                "species": "origanum vulgare",
+                "uses": "pizza, tomato sauces",
+                "medical": "relieves coughs,muscle spasms, nervous headaches, menstrual pain"
+            
+        },
+        
+            "parsely": {
+                "native": "south europe",
+                "height": 32,
+                "treat": "rich, moist soil, sun",
+                "family": "umbelliferae",
+                "species": "petroselinium crispum",
+                "uses": "soups, stews",
+                "medical": "diuretic, relieves rheumatism, aids digestion",
+                "characteristics": "flat dark green leaf, numerous stems, toothed leaves"
+            
+        },
+        
+            "rosemary": {
+                "native": "mediterranean",
+                "height": 72,
+                "treat": "well-drained soils, sun",
+                "family": "labiatae",
+                "species": "rosmarinus officinalis",
+                "uses": "shellfish, pork, lamb, garnish, decoration",
+                "medical": "increases blood supply, antibacterial, antifungal, stimulates circulation, eases aching joints",
+                "characteristics": "narrow leaves, dense foliage, vertical growth, dark green leaves"
+            
+        },
+        
+            "sage": {
+                "native": "mediterranean, north africa",
+                "height": 32,
+                "treat": "dry, well-drained soil",
+                "family": "labiatae",
+                "species": "salvia officinalis",
+                "uses": "poultry stuffing, butter, incense, tea",
+                "medical": "help irregular menstruation and menopause symptoms",
+                "characteristics": "gray-green, textured leaves, oval, pointed leaves"
+            
+        },
+        
+            "thyme": {
+                "native": "western mediterranean",
+                "height": 15,
+                "treat": "light, well-drained soil, sun",
+                "family": "labiatae",
+                "species": "thymus vulgaris",
+                "uses": "stews, soups, oils, fish",
+                "medical": "stengthens immune system, treat depression, colds, muscular pain",
+                "characteristics": "tiny leaves, wooden stem"
+            
+        },
+        
+            "garlic": {
+                "native": "central asia",
+                "height": 39,
+                "treat": "well-drained soil",
+                "family": "liliaceae",
+                "species": "allium sativum",
+                "uses": "pretty much everything, savory meals",
+                "medical": "purifies blood, reduces blood pressue, cholesterol, clotting",
+                "characteristics": "clustered bulb, single stem, long, thin leaves"
+            
+        }
+    }
