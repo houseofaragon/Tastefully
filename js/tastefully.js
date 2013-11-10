@@ -20,12 +20,12 @@ $(document).ready(function(){
 });
 
 /* ----------- MAIN PAGE: load list of herbs  ------------------*/
-var herb_list_one = ['sweet basil', 'mint', 'oregano', 'thyme', 'cilantro'];
-var herb_list_two = ['dill', 'sage', 'rosemary', 'chives', 'parsely', 'tarragon', 'arugala'];
+var herb_list_one = ['basil', 'mint', 'oregano', 'thyme', 'cilantro'];
+var herb_list_two = ['dill', 'sage', 'rosemary', 'parsely'];
 function loadHerbList(name, herb_list){
 	for(herb in herb_list){
 		$('ul#'+name).append(
-			'<li> <a class="image" href="subpage.html"><img src="images/parsely.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><a class="icon add" id="'+ herb_list[herb] +'" href="subpage.html">Get Creative</a></li>'
+			'<li> <a class="image" href="subpage.html"><img src="images/' + herb_list[herb] +'.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><a class="icon add" id="'+ herb_list[herb] +'" href="subpage.html">Get Creative</a></li>'
 		);
 	}
 }
@@ -116,7 +116,7 @@ $('.add').on('click', function(){
 	           		tooltip.style("visibility", "visible");
   					tooltip.style("left", (d3.event.pageX + 10) + "px");
   					tooltip.style("top", (d3.event.pageY - 40) + "px");    
-  					tooltip.html(d.city + ','+ d.country + '<br/>'+ d.desc );
+  					tooltip.html('<img class="left small-img" src="images/basil.png"/> ' +d.city + ','+ d.country + '<br/>'+ d.desc );
 	           		return tooltip;
 	           	})
 	           .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
