@@ -25,7 +25,7 @@ var herb_list_two = ['dill', 'sage', 'rosemary', 'parsely'];
 function loadHerbList(name, herb_list){
 	for(herb in herb_list){
 		$('ul#'+name).append(
-			'<li> <a class="image" href="subpage.html"><img src="images/' + herb_list[herb] +'.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><a class="icon add" id="'+ herb_list[herb] +'" href="subpage.html">Get Creative</a></li>'
+			'<li> <a class="image" href="subpage.html"><img src="images/' + herb_list[herb] +'.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><button class="icon add" id="' + herb_list[herb] +'">Get Creative</button></li>'
 		);
 	}
 }
@@ -35,26 +35,37 @@ loadHerbList(herb_one_name, herb_list_one);
 loadHerbList(herb_two_name, herb_list_two);
 
  /* ----------- SUB PAGES: append data  ------------------*/
-$('.add').on('click', function(){
-	console.log($(this).attr('id'));
+
+$('button.add').on('click', function(){
+	var herb = $(this).attr('id');
+
 	$.getJSON( "data/herb.json", function( data ) {
-	  	console.log(JSON.stringify(data));
+	  	//alert(JSON.stringify());
 	  	var items = [];
 	  	$.each( data, function( key, val ) {
-	  		if($(this).attr('id') === key){
-	  	 	items.push( "<li id='" + key + "'>Native to: " + val['native'] + "</li>" );
-	  	  	items.push( "<li id='" + key + "'>Greatest Height: " + val['height'] + "</li>" );
-	  	  	items.push( "<li id='" + key + "'>Most ideal environment: " + val['treat'] + "</li>" );
-	  	  	items.push( "<li id='" + key + "'>Family name:" + val['family'] + "</li>" );
-	  	  	items.push( "<li id='" + key + "'>Species name:" + val['species'] + "</li>" );
-	  	  	items.push( "<li id='" + key + "'>Typical uses: " + val['uses'] + "</li>" );
-	  	  	items.push( "<li id='" + key + "'>Medicinal uses:" + val['medical'] + "</li>" );
-	  	  	items.push( "<li id='" + key + "'>Characteristics: " + val['characteristics'] + "</li>" );
-	  	  	 $("."+key).html(items.join( "" ));
+	  		//alert(herb);
+	  		if(herb === key){
+	  		items.push( "<p>" + key + "</p>");
+	  	 	items.push( "<li id='" + key + "'><span>Native to: </span> " + val['native'] + "</li>" );
+	  	  	items.push( "<li id='" + key + "'><span>Greatest Height: </span> " + val['height'] + "</li>" );
+	  	  	items.push( "<li id='" + key + "'><span>Most ideal environment: </span> " + val['treat'] + "</li>" );
+	  	  	items.push( "<li id='" + key + "'><span>Family name: </span>" + val['family'] + "</li>" );
+	  	  	items.push( "<li id='" + key + "'><span>Species name: </span>" + val['species'] + "</li>" );
+	  	  	items.push( "<li id='" + key + "'><span>Typical uses: </span> " + val['uses'] + "</li>" );
+	  	  	items.push( "<li id='" + key + "'><span>Medicinal uses: </span>" + val['medical'] + "</li>" );
+	  	  	items.push( "<li id='" + key + "'><span>Characteristics: </span> " + val['characteristics'] + "</li>" );
+	  	  	$(".herb-data").show();
+	  	  	$(".herb-data").html();
+
+	  	  	$(".herb-data").html(items.join(""));
 	  	  	}
+
 	  	});
+	  	console.log(JSON.stringify(items));
 	});
+	
 });
+
 
 
 /*---------------- MAIN PAGE: d3 map --------------------- */
