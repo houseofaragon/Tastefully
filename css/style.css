@@ -57,7 +57,7 @@ body {
 }
 
 a {
-	color: #f0f0f0;
+	color: #333;
 	text-decoration: none;
 }
 
@@ -68,6 +68,7 @@ a {
 ul {
 	list-style-type: none;
 }
+
 h1{
 	font: 3.125em/1em 'Vollkorn',sans-serif;
 	margin: 0.03em auto;
@@ -80,14 +81,13 @@ h1{
 }
 
 h3{
-	font-family: 'Brandon Black', 'Arial',sans-serif;
+	font-family: 'Vollkorn', 'Arial',sans-serif;
 	text-align: center;
 	font-size: 2em;
 	letter-spacing: 2px;
 	border-top: 0.05em #333 solid;
 	border-bottom: 0.15em #333 solid;
 	padding: 1em;
-
 }
 
 .left{
@@ -101,6 +101,7 @@ h3{
 .container{
 	margin: 0 auto;
 }
+
 .main,
 .container > header {
 	width: 100%;
@@ -198,6 +199,7 @@ h3{
 .bg-slider{
 	background-color: #e9d654;
 	position: relative;
+	height: 550px;
 }
 .bg-slider p{
 	font-family: 'Brandon Black Italic',sans-serif;
@@ -211,7 +213,7 @@ h3{
 .bg-slider .recipe{
 	margin: 0em auto;
 	text-align: center;
-	width:80%;
+	width:90%;
 }
 
 .bg-slider .recipe img{
@@ -259,9 +261,10 @@ h3{
 /*------- Link bar for slider ---------*/
 .bg-slider  #recipe-selector {
   overflow: hidden;
+  position: absolute;
   height: 32px;
-  bottom: 2em;
-  width: 50%;
+  bottom: 1em;
+  left: 30%;
   margin: 0 auto;
 }
 
@@ -378,7 +381,7 @@ h3{
 	}
 
 .title {
-	font-family: 'Brandon Medium',sans-serif;
+	font-family: "Vollkorn",sans-serif;
 	font-size: 0.8em;
 }
 
@@ -388,7 +391,7 @@ h3{
 	margin: 0 auto;
 	text-align: center;
 	font-family: 'Brandon Medium',sans-serif;
-	font-size: 0.6em;
+	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
@@ -607,6 +610,30 @@ div.tooltip {
 	background-color: #333;
 	color: #FFF;
 }
+
+.main .herb-data{
+	display: none;
+	background-color: #F0F0F0;
+	text-indent: 2em;
+	padding: 2em;
+}
+
+	.main .herb-data p{
+		text-align: center;
+		text-transform: uppercase;
+		border-bottom: 1px solid #333;
+	}
+
+	.main .herb-data li{
+		padding: 0.5em 0;
+	}
+
+	.main .herb-data li span{
+		padding: 0.5em 0;
+		padding-right: 0.5em;
+		font-family: "Vollkorn", "Helvetica";
+		font-size: 1em;
+	}
 
 
 /*------------ MEDIA ----------------*/
