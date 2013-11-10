@@ -7,48 +7,17 @@
 
 /*---------------- MAIN PAGE: slideshow --------------------- */
 /* main content slider */
-//http://fearlessflyer.com/2010/08/how-to-create-your-own-jquery-content-slider/
-$("#tip1").on('click',function(){
-	$("[id^='Tip-']").removeClass('current');
-	$("[id^='tip']").removeClass('activeSlide');
-	$("#tip1").attr('class','activeSlide');
-	$("#Tip-1").addClass('current');
-	$("[id^='Tip-']").not('.current').css("display","none");
-	$("#Tip-1").fadeIn(1000);
-	return false;
+$(document).ready(function(){
+	$("#recipe-selector nav a").click(function() {
+		$("#recipe-selector nav a").removeClass();
+		$(this).addClass("activeSlide");
+		var tipID = "#Tip-"+$(this).html();
+		$(".recipe.current").removeClass("current").fadeOut(500, function() {
+			$(tipID).fadeIn(500);
+			$(tipID).addClass("current");
+		});		
+	});
 });
-
-$("#tip2").on('click',function(){
-	$("[id^='Tip-']").removeClass('current');
-	$("[id^='tip']").removeClass('activeSlide');
-	$("#tip2").attr('class','activeSlide');
-	$("#Tip-2").addClass('current');
-	$("[id^='Tip-']").not('.current').css("display","none");
-	$("#Tip-2").fadeIn(1000);
-	return false;
-});
-
-$("#tip3").on('click',function(){
-	$("[id^='Tip-']").removeClass('current');
-	$("[id^='tip']").removeClass('activeSlide');
-	$("#tip3").attr('class','activeSlide');
-	$("#Tip-3").addClass('current');
-	$("[id^='Tip-']").not('.current').css("display","none");
-	$("#Tip-3").fadeIn(1000);
-	return false;
-});
-
-$("#tip4").on('click',function(){
-	$("[id^='Tip-']").removeClass('current');
-	$("[id^='tip']").removeClass('activeSlide');
-	$("#tip4").attr('class','activeSlide');
-	$("#Tip-4").addClass('current');
-	$("[id^='Tip-']").not('.current').css("display","none");
-	$("#Tip-4").fadeIn(1000);
-	return false;
-});
-
-
 
 /* ----------- MAIN PAGE: load list of herbs  ------------------*/
 var herb_list_one = ['sweet basil', 'mint', 'oregano', 'thyme', 'cilantro'];
@@ -56,7 +25,7 @@ var herb_list_two = ['dill', 'sage', 'rosemary', 'chives', 'parsely', 'tarragon'
 function loadHerbList(name, herb_list){
 	for(herb in herb_list){
 		$('ul#'+name).append(
-			'<li> <a class="image" href="subpage.html"><img src="images/parsely.png"></img></a><h3 class="title">'+ herb_list[herb] +'</h3><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><a class="icon add" id="'+ herb_list[herb] +'" href="subpage.html">Get Creative</a></li>'
+			'<li> <a class="image" href="subpage.html"><img src="images/parsely.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><a class="icon add" id="'+ herb_list[herb] +'" href="subpage.html">Get Creative</a></li>'
 		);
 	}
 }
@@ -98,7 +67,7 @@ $('.add').on('click', function(){
 		//two-element array of longitude and latitude in degrees [0,0]
 		.translate([480, 300])
 	    .center([0, 0])
-	    .scale(200)
+	    .scale(150)
 	    //.rotate([-180,0]);
 
 	var svg = d3.select("#map")

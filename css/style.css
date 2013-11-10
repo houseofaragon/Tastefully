@@ -1,3 +1,8 @@
+/*
+	main background (yellow): #e9d654;
+
+*/
+
 @font-face {
 	font-family: 'Brandon Black';
 	src:url('../fonts/Brandon_blk.otf');
@@ -41,6 +46,7 @@ body {
     color: #333;
     background-color: #FFF; 
     font-size: 1em; 
+    line-height: 1.5em;
 	padding: 0; 
 	margin: 0;
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFCC), to(#FFF));
@@ -63,6 +69,17 @@ ul {
 	list-style-type: none;
 }
 
+h3{
+	font-family: 'Brandon Black', 'Arial',sans-serif;
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 2px;
+	border-top: 0.05em #333 solid;
+	border-bottom: 0.15em #333 solid;
+	padding: 1em;
+
+}
+
 .left{
 	float:left;
 }
@@ -71,11 +88,14 @@ ul {
 	float:right;
 }
 
+.container{
+	margin: 0 auto;
+}
 .main,
 .container > header {
 	width: 100%;
 	margin: 0em auto;
-	padding: 0 0.875em 0.0875em 0.875em;
+	padding: 0 1em 1em 1em;
 }
 
 	.container > header {
@@ -86,12 +106,13 @@ ul {
 	.container > header h1 {
 		font: 3.125em/1em 'Brandon Black',sans-serif;
 		margin: 0.03em auto;
-		padding-bottom: 0.05em;
+		padding: 0 0 1em;
 		text-transform: uppercase;
 		letter-spacing: 4px;
-		border-bottom: 0.05em solid #333;
+		/*
+		border-bottom: 0.05em dotted #333;
 		border-top: 0.02em solid #333;
-
+		*/
 	}
 
 	.container > header h1 span{
@@ -125,7 +146,6 @@ ul {
 	.container > header nav a > span {
 		display: none;
 		color: #333;
-
 	}
 
 	.container > header nav a:hover:before {
@@ -144,31 +164,18 @@ ul {
 		background: #333;
 	}
 
-	.bp-icon:after {
-		font-family: 'bpicons';
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		text-align: center;
-		color: #333;
-		-webkit-font-smoothing: antialiased;
+
+
+	.container > header nav .bp-icon:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		line-height: 2;
+		text-indent: 0;
 	}
 
-.container > header nav .bp-icon:after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	line-height: 2;
-	text-indent: 0;
-}
-
-.container > header nav a:hover:after {
-	color: #fff;
-}
 
 
 .bp-icon-next:after {
@@ -203,18 +210,20 @@ ul {
 	text-align: center;
 	font-size: 3em;
 	letter-spacing: 3px;
+	padding: 0.5em 0;
 }
+
 .bg-slider .recipe{
-	min-height: 400px;
 	margin: 0em auto;
 	text-align: center;
+	width:80%;
 }
 
 .bg-slider .recipe img{
-	text-align: center;
+	width: 300px;
 }
 
-.bg-slider .recipe  p {
+.bg-slider .recipe  p.tip {
 	font-family: 'Brandon Medium',sans-serif;
 	color: #333;
 	font-size: 2em;
@@ -231,8 +240,9 @@ ul {
 	font-size: 1.5em;
 	color: #333;
 	text-align: justify;
-	margin-right: 80px;
-	margin-bottom: 0em;
+	margin: 0 auto;
+	padding: 2em 0;
+	padding-right: 4em;
 }
 
 .bg-slider .recipe .link{
@@ -245,40 +255,43 @@ ul {
 }
 
 /*------- Link bar for slider ---------*/
-#recipe-selector {
-  background: #e9d654 url(../images/sprite-project-overview-nav.png) 0 0 no-repeat;
+.bg-slider  #recipe-selector {
   overflow: hidden;
-  width: 484px;
   height: 32px;
-  margin-top: -50px;
+  bottom: 2em;
+  width: 50%;
+  margin: 0 auto;
 }
 
-#recipe-selector em { 
+.bg-slider #recipe-selector em { 
   padding: 8px 20px 0 100px; 
-  display: block;
+  display: inline-block;
   float: left;
   color: #333;
   font-family: 'Vollkorn', serif;
+  
 }
 
-#recipe-selector nav a{  
-  width: 36px;
-  height: 32px;
+.bg-slider  #recipe-selector nav a{
+  width: 3.5em;
+  height: 3.5em;
   float: left;
-  text-align: center;
-  padding: 0;
+  padding-right: 10px;
+  padding-top: 3px;
   background: url(../images/sprite-project-overview-nav.png) -167px -81px no-repeat;
-  display: block;
+  display: inline-block;
   font-family: 'Vollkorn', sans-serif,monospace;
   font-size: 1em;
   line-height: 1.6em;
   color: #333;
+  margin: 0 auto;
+
 }
 
-#recipe-selector a.activeSlide, #recipe-selector a:hover{  
+.bg-slider  #recipe-selector a.activeSlide, #recipe-selector a:hover{  
   background: url(../images/sprite-project-overview-nav.png) -167px -44px no-repeat;
   color: #F0F0F0;
-
+  margin: 0 auto;
 }
 
 #Tip-2,#Tip-3,#Tip-4{
@@ -374,14 +387,14 @@ ul {
 	margin: 0 auto;
 	text-align: center;
 	font-family: 'Brandon Medium',sans-serif;
-	font-size: 0.35em;
+	font-size: 1em;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 
 }
 
 .details{
-	font-size: 0.85em;
+	font-size: 1em;
 	letter-spacing: 2px;
 }
 
@@ -403,6 +416,7 @@ ul {
 	.add:before {
 		margin-right: 5px;
 	}
+
 /*------ Common icon styles --------*/
 .icon:before {
 	font-family: 'fontawesome',helvetica,sans-serif;
@@ -480,16 +494,16 @@ ul {
 }
 
 .view-list .title {
-	font-size: 1em;
-	padding: 0 10px;
+	font-size: 1.5em;
+	padding: 0 20px;
 	white-space: normal;
-	width: 23%;
+	width: 10%;
 }
 
 .view-list .region {
 	font-size: 1em;
-	width: 10%;
 	margin-left: 0em;
+	padding: 0 2em;
 }
 
 .view-list .details {
@@ -513,14 +527,7 @@ ul {
 	margin: 0 auto;
 }
 
-#visualization h3{
-	font-family: 'Brandon Black', 'Arial',sans-serif;
-	text-align: left;
-	font-size: 2em;
-	letter-spacing: 2px;
-	border-top: 0.05em #333 solid;
-	border-bottom: 0.15em #333 solid;
-}
+
 #visualization p{
 	width: 25%;
 	padding: 1em;
@@ -572,14 +579,14 @@ div.tooltip {
 		font-family: 'Vollkorn',serif;
 		font-size: 2em;
 		color: #e9d654;
+		padding: 2em 0;
 	}
 
 .call p.details{
-	font-family: 'Brandon Thin',serif;
+	font-family: 'Vollkorn',serif;
 	font-size: 1.2em;
 	padding: 0em 5em;
 	text-transform: none;
-
 }
 
 .call .add{
@@ -591,105 +598,6 @@ div.tooltip {
 .call .add:hover{
 	background-color: #333;
 	color: #FFF;
-}
-
-/*************************************/
-/*            SUBPAGE Slider         */
-/*************************************/
-.bg-slider-sub{
-	background-color: #e9d654;
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-}
-.bg-slider-sub  h2{
-	font-family: 'Brandon Black Italic',sans-serif;
-	color: #F0F0F0;
-	font-size: 3em;
-	letter-spacing: 3px;
-
-}
-.bg-slider-sub .recipe{
-	min-height: 400px;
-	text-align: center;
-	margin: 5em auto 10em auto;
-	width:  80%;
-}
-
-.bg-slider-sub .recipe img{
-}
-
-.bg-slider-sub .recipe p.tip {
-	font-family: 'Brandon Medium',sans-serif;
-	color: #333;
-	font-size: 3em;
-	text-align: center;
-	padding: 1em 0;
-
-}
-	.recipe p.tip span{
-		font-family: 'Brandon Black Italic',sans-serif;
-		color: #FA5858;
-	}
-
-
-.recipe p.tip-details{
-	font-family: 'Vollkorn',sans-serif;
-	font-size: 2em;
-	text-align: center;
-	width: 80%;
-	margin: 0 auto;
-
-}
-
-.recipe .link{
-	color: #FA5858;
-	margin: 1em auto;
-}
-
-.recipe .link:hover{
-	color: #FFF;
-}
-
-/*------- Link bar for slider ---------*/
-#recipe-selector {
-  background: #e9d654 url(../images/sprite-project-overview-nav.png) 0 0 no-repeat;
-  overflow: hidden;
-  width: 484px;
-  height: 32px;
-  margin-top: -50px;
-}
-
-#recipe-selector em { 
-  padding: 8px 20px 0 100px; 
-  display: block;
-  float: left;
-  color: #333;
-  font-family: 'Vollkorn', serif;
-}
-
-#recipe-selector nav a{  
-  width: 36px;
-  height: 32px;
-  float: left;
-  text-align: center;
-  padding: 0;
-  background: url(../images/sprite-project-overview-nav.png) -167px -81px no-repeat;
-  display: block;
-  font-family: 'Vollkorn', sans-serif,monospace;
-  font-size: 1em;
-  line-height: 1.6em;
-  color: #333;
-}
-
-#recipe-selector a.activeSlide, #recipe-selector a:hover{  
-  background: url(../images/sprite-project-overview-nav.png) -167px -44px no-repeat;
-  color: #F0F0F0;
-
-}
-
-#Tip-2,#Tip-3,#Tip-4{
-	display:none;
 }
 
 
