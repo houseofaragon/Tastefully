@@ -121,13 +121,13 @@ $('button.add').on('click', function(){
 	           .attr("cy", function(d) {
 	                return projection([d.lon, d.lat])[1];
 	           })
-	           .attr("r", 10)
+	           .attr("r", 7)
 	           .style("fill", "#F78181")
 	           .on("mouseover", function(d){
 	           		tooltip.style("visibility", "visible");
   					tooltip.style("left", (d3.event.pageX + 10) + "px");
   					tooltip.style("top", (d3.event.pageY - 40) + "px");    
-  					tooltip.html('<img class="left small-img" src="images/basil.png"/> ' +d.city + ','+ d.country + '<br/>'+ d.desc );
+  					tooltip.html('<img class="left small-img" src="images/basil.png"/> ' +d.city + ','+ d.country + '<br/> - - - <br/>'+ d.desc );
 	           		return tooltip;
 	           	})
 	           .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
