@@ -44,16 +44,17 @@
 body {
     font-family: 'Vollkorn','Brandon Medium', Helvetica, Arial, sans-serif;
     color: #333;
-    background-color: #FFF; 
+    background-color: #DEFAED; 
     font-size: 1em; 
     line-height: 1em;
 	padding: 0; 
 	margin: 0;
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFCC), to(#FFF));
-    background-image: -webkit-linear-gradient(top, #FFFFCC, #FFF); 
-    background-image:    -moz-linear-gradient(top, #FFFFCC, #FFF);
-    background-image:     -ms-linear-gradient(top, #FFFFCC, #FFF);
-    background-image:      -o-linear-gradient(top, #FFFFCC, #FFF);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DEFAED), to(#FFF));
+    background-image: -webkit-linear-gradient(top, #DEFAED, #FFF); 
+    background-image:    -moz-linear-gradient(top, #DEFAED, #FFF);
+    background-image:     -ms-linear-gradient(top, #DEFAED, #FFF);
+    background-image:      -o-linear-gradient(top, #DEFAED, #FFF);
+    border: 1em solid #FFFFE6;
 }
 
 a {
@@ -70,7 +71,7 @@ ul {
 }
 
 h1{
-	font: 3.125em/1em 'Vollkorn',sans-serif;
+	font: 2em/1em 'Vollkorn',sans-serif;
 	margin: 0.03em auto;
 	padding: 0 0 0.5em;
 	letter-spacing: 2px;
@@ -83,7 +84,7 @@ h1{
 h3{
 	font-family: 'Vollkorn', 'Arial',sans-serif;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1em;
 	letter-spacing: 2px;
 	border-top: 0.05em #333 solid;
 	border-bottom: 0.15em #333 solid;
@@ -107,6 +108,7 @@ h3{
 	width: 100%;
 	margin: 0em auto;
 	padding: 0 1em 1em 1em;
+	background-color: #FFF;
 }
 
 	.container > header {
@@ -119,7 +121,7 @@ h3{
 	}
 
 	.container > header h4 {
-		font-size: 1.125em;
+		font-size: 1em;
 		letter-spacing: 0.1em;
 		margin: 1em 0.6em;
 		font-weight: 400;
@@ -135,9 +137,9 @@ h3{
 		position: relative;
 		width: 2em;
 		height: 2em;
-		background: #e9d654;
+		background: #F0F0F0;
 		border-radius: 50%;
-		margin: 0.5em 0.1em 1.5em 0.1em;
+		margin: 1em 0.5em 1em;
 		border: none;
 		color: #333;
 	}
@@ -151,23 +153,20 @@ h3{
 		content: attr(data-info);
 		color: #333;
 		position: absolute;
-		width: 600%;
-		top: 120%;
-		text-align: right;
-		right: 0;
+		width: 100%;
+		top: 100%;
+		text-align: left;
 		pointer-events: none;
 
 	}
 
 	.container > header nav a:hover {
-		background: #333;
+		background: #FFF;
 	}
 
-
-
-	.container > header nav .bp-icon:after {
+	.container > header nav:after {
 		position: absolute;
-		top: 0;
+		margin-top: 1em;
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -175,37 +174,35 @@ h3{
 		text-indent: 0;
 	}
 
+	.fa.fa-camera-retro, .fa.fa-pagelines, .fa.fa-bar-chart-o,.fa.fa-pencil, .fa.fa-envelope{
+		line-height: 2em;
+	}
 
 
 .bp-icon-next:after {
-	content: "\e000";
 }
 .bp-icon-drop:after {
-	content: "\e001";
 }
 .bp-icon-archive:after {
-	content: "\e002";
 }
 .bp-icon-about:after {
-	content: "\e003";
 }
 .bp-icon-prev:after {
-	content: "\e004";
 }
 
 
 
 /*------------ Main Page Slider ---------------*/
 .bg-slider{
-	background-color: #e9d654;
+	background-color: #DEFAED;
 	position: relative;
-	height: 550px;
+	min-height: 350px;
 }
 .bg-slider p{
 	font-family: 'Brandon Black Italic',sans-serif;
-	color: #F0F0F0;
+	color: #333;
 	text-align: center;
-	font-size: 3em;
+	font-size: 2em;
 	letter-spacing: 3px;
 	padding: 0.5em 0;
 }
@@ -213,7 +210,7 @@ h3{
 .bg-slider .recipe{
 	margin: 0em auto;
 	text-align: center;
-	width:90%;
+	width:80%;
 }
 
 .bg-slider .recipe img{
@@ -247,6 +244,7 @@ h3{
 	line-height: 1.2em;
 	text-indent: 2em;
 	letter-spacing: 2px;
+	font-size: 1em;
 }
 
 .bg-slider .recipe .link{
@@ -402,8 +400,8 @@ h3{
 }
 
 .add {
-	color: #fff;
-	background: #e9d654;
+	color: #333;
+	background: #DEFAED;
 	padding: 10px 20px;
 	border-radius: 2px;
 	margin: 20px 0 0;
@@ -549,14 +547,16 @@ div.tooltip {
   text-align: center;           
   height: auto;  
   width: 250px;               
-  padding: 10px;             
+  padding: 10px;  
+  margin-left: 1em;           
   font: 12px sans-serif;        
-  background: #e9d654;  
+  background: #DEFAED;  
   color: #333; 
   border: 0px;      
   border-radius: 8px;           
   pointer-events: none; 
-  font-family: 'Vollkorn', 'Georgia', serif;        
+  font-family: 'Vollkorn', 'Georgia', serif;   
+  border: 0.5em solid #f0f0f0;     
 }
 
 .small-img{
@@ -633,6 +633,7 @@ div.tooltip {
 		padding-right: 0.5em;
 		font-family: "Vollkorn", "Helvetica";
 		font-size: 1em;
+		text-decoration: italic;
 	}
 
 
