@@ -12,7 +12,7 @@
 	<div class="container">
 <!-- Header Content -->
 		<header class="clearfix">
-			<h1 class="left" > <span>Tasteful</span>.ly </h1> 
+			<h1 class="left" ><a href="index.html"> <span>Tasteful</span>.ly </a></h1> 
 
 <!-- Main Navigation -->
 			<nav class="right" >
@@ -29,54 +29,59 @@
 					<span> Contact </span> 
 				</a>
 			</nav>
-		<h4 class="left" > All about <span> basil.</span> </h4> 
+			<h4 class="left"> All about <span> basil.</span> </h4> 
 
 		</header>
 <!-- Rotating Info -->
 
-</div><!-- end of slideshow-->
-			<div class="clearfix bg-slider-sub" id="">
-				<div class="recipe clearfix current" id="Tip-1">
-							<p  class="tip"> Tip <span>#1: </span>Don't throw away parsely (or any leftover herbs). </p>
-							<p class="tip-details">
-								I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this 
-							</p>
-				</div>
-				<div class="recipe clearfix" id="Tip-2">
-							<p  class="tip"> Tip <span>#2: </span>Add herbs like basil or mint to plain old ice water. </p>
-							<p class="tip-details">
-								I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter.<br/> In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. 
-							</p>
-				</div>
-				<div class="recipe clearfix" id="Tip-3">
-							<p  class="tip"> Tip <span>#3: </span>Add herbs like mint or basil into your favorite fruit salads. </p>
-							<p class="tip">
-								I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter.<br/> In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. 
-							</p>
-				</div>
-				<div class="recipe clearfix" id="Tip-4">
-							<p  class="tip"> Tip <span>#4: </span>Dry leftover herbs like parsely and thyme. </p>
-							<p class="tip-details">
-								I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter.<br/> In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. 
-							</p>
-				</div>
-			<div id="recipe-selector">
-				<em> Select an idea. </em>
-				<nav>
-					<a href="#" class="activeSlide" id="tip1">1</a>
-					<a href="#"  class="" id="tip2">2</a>
-					<a href="#"  class="" id="tip3">3</a>
-					<a href="#"  class="" id="tip4">4</a>
-				</nav>
-			</div>
-			</div>
+<div class="clearfix bg-slider" >
+		<p> Get Creative with your favorite herbs. </p>
+		<div class="recipe current" id="Tip-1">
+			<img class="left" src="images/parsely.png"/> 
+			<p  class="tip"> Tip <span>#1: </span>Don't throw away parsely (or any leftover herbs). </p>
+			<p class="tip-details">
+				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter.  In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+			</p>
+		</div>
+		<div class="recipe" id="Tip-2">
+			<img class="left" src="images/mint.png"/> 
+			<p  class="tip"> Tip <span>#2: </span>Add herbs like basil or mint to plain old ice water. </p>
+			<p class="tip-details">
+				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter. In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+			</p>
+		</div>
+		<div class="recipe" id="Tip-3">
+			<img class="left" src="images/basil.png"/> 
+			<p  class="tip"> Tip <span>#3: </span>Add herbs like mint or basil into your favorite fruit salads. </p>
+			<p class="tip-details">
+				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter. In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+			</p>
+		</div>
+		<div class="recipe" id="Tip-4">
+			<img class="left" src="images/oregano.png"/>
+			<p  class="tip"> Tip <span>#4: </span>Dry leftover herbs like parsely and thyme. </p>
+			<p class="tip-details">
+				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter. In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+			</p>
+		</div>	
+		<div class="recipe" id="recipe-selector" >
+			<em> Select an idea: </em>
+			<nav>
+				<a href="#" class="activeSlide" id="tip1">1</a>
+				<a href="#"  class="" id="tip2">2</a>
+				<a href="#"  class="" id="tip3">3</a>
+				<a href="#"  class="" id="tip4">4</a>
+			</nav>
+		</div>
+	</div>
+
 
 <!-- Switcher -->
 			<div class="main">
 				<ul class="basil"></ul>
 				<ul class="oregano"></ul>
-
-			</div><!-- /main -->
+			</div>
+			<div class="herb-data"></div>
 			<div class="call clearfix">
 				<p> Ideas of your own? </p>
 					<p class="details">
@@ -91,12 +96,10 @@
 		</div><!-- /container -->
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-		<script src="js/d3.v3.js" charset="utf-8"></script>
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/classie.js"></script>
+			<script src="js/d3.v3.js" charset="utf-8"></script>
+	<script src="js/modernizr.custom.js"></script>
 		<script src="js/cbpViewModeSwitch.js"></script>
 		<!-- map -->
- 		<script src="js/topojson.v0.min.js"></script>
  		<script src="js/tastefully.js"></script>
 	</body>
 </html>

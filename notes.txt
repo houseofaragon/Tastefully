@@ -1,6 +1,35 @@
+To Do:
+
+freeze herbs in ice-cubes
+make herbal lotions
+infuse herbs in oil
 
 
 
+http://www.desmoinesregister.com/interactive/article/20131109/NEWS/131109004/Interactive-graphic-How-Typhoon-Haiyan-compares-Hurricane-Katrina
+
+
+
+
+
+
+
+herb mappings:
+	http://stackoverflow.com/questions/12206287/cant-remove-rotation-in-d3s-radial-tree-layout
+http://jsfiddle.net/augburto/YMa2y/
+http://jsfiddle.net/augburto/YMa2y/
+
+done- different images
+center links
+remove background?
+map - locations
+
+fix herb anthropology
+
+
+*
+
+http://suite101.com/a/herb-pairing-list-a94302
 
 
 
@@ -66,9 +95,6 @@ native to the Mediterranean region.
 
 13. Sage
  is native to the Mediterranean region
-
-16. Sage
- Native to the Mediterranean region, thyme was brought to Britain by the Romans.
 
 17. Oregano
 18. Garlic
