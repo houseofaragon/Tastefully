@@ -2,7 +2,7 @@
 	green: DEFAED;
 	gray: FCFCFC;
 	pink: E4B04A;
-	brown: E4B04A;
+	brown: C77826;
 */
 
 @font-face {
@@ -74,8 +74,7 @@ ul {
 
 h1{
 	font: 2em/1em 'Vollkorn',sans-serif;
-	margin: 0.03em auto;
-	padding: 0 0 0.5em;
+	margin: 0 auto;
 	letter-spacing: 2px;
 }
 
@@ -103,12 +102,10 @@ h3{
 
 .main,
 .container > header {
-	padding: 0 1em 1em 2em;
 	font-family: 'Vollkorn';
 }
-
 	.container > header {
-		padding: 2em;
+		padding: 2em 2em 1em;
 		text-align: center;
 		position: fixed;
 		z-index: 2;
@@ -117,6 +114,7 @@ h3{
 		top: 0;
     	border-top: 1em solid #FCFCFC;
     	border-right: 2em solid #FCFCFC;
+    	border-bottom: 0.5em solid #FCFCFC;
 	}
 
 	.container > header h1 span{
@@ -126,18 +124,14 @@ h3{
 	.container > header h4 {
 		font-size: 1em;
 		letter-spacing: 0.1em;
-		margin: 1em 0.6em;
+		margin: 1em 2em;
 		font-weight: 400;
-		margin-left: 2em;
 	}
 		.container > header h4 span {
 			border-bottom: 1px solid #333;
 			font-style: italic;
 		}
 
-	.container > header nav{
-
-	}
 	.container > header nav a {
 		display: inline-block;
 		position: relative;
@@ -183,39 +177,30 @@ h3{
 		line-height: 2em;
 	}
 
-
-.bp-icon-next:after {
-}
-.bp-icon-drop:after {
-}
-.bp-icon-archive:after {
-}
-.bp-icon-about:after {
-}
-.bp-icon-prev:after {
-}
-
 /*------------ Main Page Slider ---------------*/
 .bg-slider{
 	position: relative;
-	margin: 10em auto 0 auto;
+	margin: 9em auto 0 auto;
 	height: auto;
 }
 .bg-slider p.headline{
 	font-family: 'Vollkorn',sans-serif;
-	color: #E4B04A;
-	opacity: 0.5;
+	color: #C77826;
 	text-align: center;
 	font-size: 2em;
 	letter-spacing: 3px;
-	padding: 0 0 1em 0;
+	padding: 0 0 2em 0;
 	border-bottom: 2px solid #FCFCFC;
 }
-.bg-slider p.headline span{
-	text-transform: underline;
+.bg-slider p.headline span#change{
+	width: 210px;
+	min-width: 200px;
+	padding: 0.5em 0;
+	border: 2px solid #C77826;
 }
+
 .bg-slider .recipe{
-	margin: 0em auto;
+	margin: 2em auto;
 	text-align: center;
 	width:80%;
 }
@@ -227,37 +212,38 @@ h3{
 }
 
 .bg-slider .recipe  p.tip {
-	font-family: 'Brandon Medium',sans-serif;
+	font-family: 'Brandon Black',sans-serif;
 	color: #333;
-	font-size: 2em;
+	font-size: 1.4em;
 	text-align: left;
-	line-height: 1.5em;
-	padding: 0;
-	letter-spacing: 3px;
+	line-height: 1em;
+	padding-top: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 
 }
 	.bg-slider .recipe p.tip span{
-		font-family: 'Brandon Black Italic',sans-serif;
-		color: #E4B04A;
+		font-family: 'Vollkorn',sans-serif;
+		color: #C77826;
+		font-size: 1em;
 	}
 
 .bg-slider .recipe p.tip-details{
 	font-family: 'Vollkorn',sans-serif;
-	font-size: 1.5em;
 	color: #333;
 	text-align: left;
 	margin: 0 auto;
-	padding: 1em 0;
 	padding-right: 4em;
-	line-height: 1.2em;
-	text-indent: 2em;
-	letter-spacing: 2px;
-	font-size: 1em;
+	line-height: 1.3em;
+	letter-spacing: 1px;
+	font-size: 1.3em;
 }
 
 .bg-slider .recipe .link{
-	color: #E4B04A;
+	color: #C77826;
 	margin: 1em auto;
+	font-family: 'Vollkorn',sans-serif;
+
 }
 
 .bg-slider .recipe .link:hover{
@@ -304,7 +290,7 @@ h3{
 }
 
 #recipe-selector a.activeSlide, #recipe-selector a:hover{  
-  background: #E4B04A;
+  background: #C77826;
   color: #F0F0F0;
 }
 
@@ -325,7 +311,7 @@ h3{
 		height: 40px;
 		overflow: hidden;
 		white-space: nowrap;
-		color: #E4B04A;
+		color: #C77826;
 		margin: 2px;
 	}
 
@@ -428,7 +414,7 @@ h3{
 
 	.add:hover {
 		color: #fff;
-		background: #E4B04A;
+		background: #C77826;
 	}
 
 	.add:before {
