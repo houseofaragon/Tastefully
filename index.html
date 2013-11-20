@@ -42,9 +42,14 @@ require('./wp-blog-header.php');
 
 		</header>
 <!-- Rotating Info -->
+	<div class="clearfix" id="tree">
+		<p><span>Herb Pairings</span><br/><br/><br/>The graph to the left is a great primer into the world of herbs, giving you ideas of what foods I like to pair herbs with when I cook with them at home. It's definitely not an exhaustive list, and I'm always interested in what others are doing with them too. I'm constantly learning.</p>
+	</div>
 
 	<div class="clearfix bg-slider" >
+
 		<p class="headline"> Get <span id="change"><i>Creative</i></span> with your favorite herbs. </p>
+
 		<div class="recipe current" id="Tip-1">
 			<img class="left" src="images/sage.png"/> 
 				<p  class="tip"> Tip <span>#1: </span>Don't throw away leftover herbs, freeze them instead. </p>
@@ -82,6 +87,7 @@ require('./wp-blog-header.php');
 
 	</div>
 	<div class=" clearfix" id="recipe-selector" >
+
 		<nav>
 			<a href="#" class="activeSlide" id="tip1">1</a>
 			<a href="#"  class="" id="tip2">2</a>
@@ -89,8 +95,10 @@ require('./wp-blog-header.php');
 			<a href="#"  class="" id="tip4">4</a>
 		</nav>
 	</div>
+
 <!-- Switcher -->
 	<div class="main">
+
 		<div id="cbp-vm" class="switcher view-grid">
 			<div class="options">
 				<a href="#" class="icon grid selected" data-view="view-grid">Grid View</a>
@@ -98,7 +106,7 @@ require('./wp-blog-header.php');
 			</div>
 <!-- Main List -->
 			<ul id="herb_list_one"></ul>
-				<div class="herb-data"></div>
+			<div class="herb-data"></div>
 
 <!-- D3 Map -->	
 			<div class="clearfix" id="visualization">
@@ -108,6 +116,7 @@ require('./wp-blog-header.php');
 			</div>
 			<ul id="herb_list_two"></ul>
 		</div>
+
 	</div><!-- /main -->
 	<div class="call clearfix">
 		<p> Ideas of your own? </p>
@@ -130,6 +139,8 @@ require('./wp-blog-header.php');
 	<!-- map -->
 	<script src="js/topojson.v0.min.js"></script>
 	<script src="js/tastefully.js"></script>
-	<script src="data/herb.json"></script>
+	<script src="js/node_tree.js"></script>
+
+
 </body>
 </html>
