@@ -571,34 +571,32 @@ div.tooltip {
 
 /*---- CALL FOR ENTRIES -------------*/
 .call{
-	min-height: 500px;
+	min-height: 400px;
 	margin: 1em auto;
 	text-align: center;
 	color: #FFF;
+	background-color: #C77826;
+	padding: 2em;
 }
 
 .call p{
 	font-family: 'Brandon Medium',sans-serif;
-	color: #333;
 	font-size: 4em;
-	letter-spacing: 3px;
-	padding-top: 1em;
+	letter-spacing: 1px;
 }
 
 .call p.details{
 	font-family: 'Vollkorn',serif;
 	font-size: 1.5em;
-	padding: 1em 6em;
 	text-transform: none;
 	line-height: 1.3em;
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 }
 
 	.call > p.details > span{
 		font-family: 'Vollkorn',serif;
-		font-size: 1.5em;
-		color: #C77826;
+		color: #333;
 		margin: 1em 0;
 	}
 
@@ -612,6 +610,15 @@ div.tooltip {
 	background-color: #333;
 	color: #FFF;
 }
+
+
+
+
+
+
+
+
+
 
 .main {
 	margin-top: 2em;
