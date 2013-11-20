@@ -1,3 +1,9 @@
+<?php 
+/* Short and sweet */
+define('WP_USE_THEMES', false);
+require('./wp-blog-header.php');
+?>
+
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8"/>
@@ -19,16 +25,16 @@
 		<h1 class="left" ><a href="index.html"> <span>Tasteful</span>.ly </a></h1> 
 		<!-- Main Navigation -->
 			<nav class="right" >
-				<a class="bp-icon bp-icon-drop" data-info="Recipes" href="#recipe"> 
+				<a class="bp-icon" data-info="Recipes" href="#recipe"> 
 					<i class="fa fa-pagelines"></i>  
 				</a>
-				<a class="bp-icon bp-icon-drop" data-info="Data Visualizations" href="#visualization"> 
+				<a class="bp-icon " data-info="Data Visualizations" href="#visualization"> 
 					<i class="fa fa-bar-chart-o"></i>  
  				</a>
-				<a class="bp-icon bp-icon-drop" data-info="Blog" href="http://tasteful.ly/">
+				<a class="bp-icon" data-info="Blog" href="blog/">
 					<i class="fa fa-pencil"></i>  
 				</a>
-				<a class="bp-icon bp-icon-archive" data-info="Contact" href="#visualization"> 
+				<a class="bp-icon" data-info="Contact" href="#visualization"> 
 					<i class="fa fa-envelope"></i>  
 				</a>
 			</nav>
@@ -38,18 +44,18 @@
 <!-- Rotating Info -->
 
 	<div class="clearfix bg-slider" >
-		<p class="headline"> Get <span><i>Creative</i></span> with your favorite herbs. </p>
+		<p class="headline"> Get <span id="change"><i>Creative</i></span> with your favorite herbs. </p>
 		<div class="recipe current" id="Tip-1">
-			<img class="left" src="images/cilantro.png"/> 
-			<p  class="tip">Tip <span>#1: </span> Don't throw away parsely (or any leftover herbs). </p>
+			<img class="left" src="images/sage.png"/> 
+				<p  class="tip"> Tip <span>#1: </span>Don't throw away leftover herbs, freeze them instead. </p>
 			<p class="tip-details">
 				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter.  
-				In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+				In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="http://localhost/~karen/Tastefully/blog/?p=16" class="link"> Read More </a>
 			</p>
 		</div>
 		<div class="recipe" id="Tip-2">
 			<img class="left" src="images/mint.png"/> 
-			<p  class="tip"> Tip <span>#2: </span>Add herbs like basil or mint to plain old ice water. </p>
+			<p  class="tip"> Tip <span>#2: </span>Add some flair to your drinks or cocktails.</p>
 			<p class="tip-details">
 				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter. In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
 			</p>
@@ -59,15 +65,16 @@
 			<img class="left" src="images/basil.png"/> 
 			</div>
 			<div>
-			<p  class="tip"> Tip <span>#3: </span>Add herbs like mint or basil into your favorite fruit salads. </p>
+			<p  class="tip"> Tip <span>#3: </span>do you love butter?</p>
 			<p class="tip-details">
-				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter. In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
+				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter. In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. 
+				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter. In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy.<a href="#" class="link"> Read More </a>
 			</p>
 			</div>
 		</div>
 		<div class="recipe" id="Tip-4">
 			<img class="left" src="images/oregano.png"/>
-			<p  class="tip"> Tip <span>#4: </span>Dry leftover herbs like parsely and thyme. </p>
+			<p  class="tip"> Tip <span>#4: </span>d.i.y. infused oils.</p>
 			<p class="tip-details">
 				I always seem to have an abundance of left over herbs just sitting in the fridge, getting old and limp. Instead of tossing them in the garbage, use this technique to freeze them in ice trays using butter. In the future, all you have to do is pop them out and toss in a frying pan. Wow, so easy. <a href="#" class="link"> Read More </a>
 			</p>
@@ -105,7 +112,7 @@
 	<div class="call clearfix">
 		<p> Ideas of your own? </p>
 			<p class="details">
-				<span> Don't keept it to yourself, share it with the world!</span><br/>
+				<span> Don't keept it to yourself,<br> share it with the world!</span><br/><br/>
 				Let the world know how awesome and creative you are. By sharing your ideas, whether it be a clever way to store herbs or a new and tasty recipe your brilliant mind came up with, you help to enrich the overall culinary and creative experiences of your fellow herbal nerds.
 			</p>
 			<a class="add" href="#">
