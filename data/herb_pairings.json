@@ -1,0 +1,160 @@
+{
+ "name": "Herb List",
+ "children": [
+  {
+   "name": "Basil",
+   "description": "Great for italian",
+   "children": [
+    {
+     "name": "chicken",
+     "children": []
+    },
+    {
+     "name": "tomatoes",
+     "children": [
+      {"name": "mozzarella", "size": 3534}
+     ]
+    },
+    {
+     "name": "olive oil",
+     "children": [
+      {"name": "make a pesto", "size": 7074}
+     ]
+    },
+    {
+     "name": "eggplant",
+     "children": [
+      {"name": "add to a stir fry", "size": 7074},
+      {"name": "bake with mozarella", "size": 7074}
+     ]
+    },
+    {
+     "name": "butter",
+     "children": [
+      {"name": "smear it on corn or toast", "size": 7074}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Cilantro",
+      "description": "Great for italian",
+
+   "children": [
+    {"name": "fish", "size": 17010},
+    {"name": "beef stir-fry", "size": 5842},
+    {
+     "name": "salsa",
+     "children": [
+      {"name": "tomato", "size": 1983},
+      {"name": "mango", "size": 2047},
+      {"name": "red onion", "size": 1375},
+      {"name": "garlic", "size": 8746},
+      {"name": "jalapeno", "size": 2202}
+     ]
+    },
+    {"name": "chicken", "size": 1041}
+   ]
+  },
+  {
+   "name": "Dill",
+      "description": "Great for italian",
+
+   "children": [
+    {
+     "name": "ground beef",
+     "children": [
+      {"name": "tomato sauce", "size": 721},
+      {"name": "onions", "size": 4294},
+      {"name": "pickles", "size": 1759},
+      {"name": "potatoes", "size": 2165},
+      {"name": "salmon", "size": 586},
+      {"name": "mayonnaise sauce", "size": 3331},
+      {"name": "egg salad", "size": 772},
+      {"name": "shrimp", "size": 3322}
+     ]
+  }]
+  },
+  {
+   "name": "Oregano",
+   "description": "Great for italian",
+
+   "children": [
+    {"name": "lamb", "size": 8833},
+    {"name": "tomato", "size": 1732},
+    {"name": "feta", "size": 3623},
+    {"name": "italian meals", "size": 10066}
+   ]
+  },
+  {
+   "name": "Parsely",
+   "description": "Great for italian",
+   
+   "children": [
+    {"name": "chicken salad", "size": 4116},
+    {"name": "potatoes", "size": 4116},
+    {"name": "seafood", "size": 4116},
+    {"name": "while roasting", "size": 4116}
+   ]
+  },
+  {
+   "name": "Rosemary",
+   "description": "Great for italian",
+   
+   "children": [
+    {"name": "olive oil", "size": 1082},
+    {"name": "chicken", "size": 1336},
+    {"name": "eggplant", "size": 319},
+    {"name": "beef", "size": 10498},
+    {"name": "lemon", "size": 9983}
+   ]
+  },
+  {
+   "name": "Sage",
+   "description": "Great for italian",
+   
+   "children": [
+    {"name": "tea", "size": 1616},
+    {"name": "rub on pork", "size": 1027},
+    {"name": "rub on chicken", "size": 3891},
+    {"name": "fry with butter", "size": 891},
+    {"name": "prosciutto", "size": 2893}
+    ]
+  },
+  {
+   "name": "Thyme",
+   "description": "Great for italian",
+   
+   "children": [
+    {"name": "cheese", "size": 2105},
+    {"name": "rub on chicken", "size": 1316},
+    {"name": "sprinkle on seafood", "size": 3151},
+    {"name": "good for marinades", "size": 3770}
+   ]
+  },
+  {
+   "name": "Mint",
+   "description": "Great for italian",
+   
+   "children": [
+      {"name": "cocktails", "size": 8258},
+      {"name": "fruit salad", "size": 10001},
+      {"name": "tabouleh", "size": 8217},
+      {"name": "lamb", "size": 12555},
+      {"name": "gyros", "size": 2324},
+      {"name": "cous-cous", "size": 10993}
+    ]
+  },
+  {
+   "name": "Bay",
+   "description": "Great for italian",
+   
+   "children": [
+    {"name": "put in stews and stocks", "size": 4116},
+    {"name": "rub on chicken", "size": 4116},
+    {"name": "rub on beef", "size": 4116}
+
+   ]
+  }
+ ]
+}
