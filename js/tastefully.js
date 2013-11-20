@@ -25,7 +25,7 @@ var herb_list_two = ['dill', 'sage', 'rosemary', 'parsely'];
 function loadHerbList(name, herb_list){
 	for(herb in herb_list){
 		$('ul#'+name).append(
-			'<li> <a class="image" href="subpage.html"><img src="images/' + herb_list[herb] +'.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><button class="icon add" id="' + herb_list[herb] +'">Get Creative</button></li>'
+			'<li> <a class="image" href="subpage.html"><img src="images/' + herb_list[herb] +'.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><a class="icon add" href="blog/all-about-' + herb_list[herb] +'">Get Creative</a></li>'
 		);
 	}
 }
@@ -122,7 +122,7 @@ $('button.add').on('click', function(){
 	                return projection([d.lon, d.lat])[1];
 	           })
 	           .attr("r", 7)
-	           .style("fill", "#F78181")
+	           .style("fill", "#C77826")
 	           .on("mouseover", function(d){
 	           		tooltip.style("visibility", "visible");
   					tooltip.style("left", (d3.event.pageX + 10) + "px");
@@ -143,4 +143,16 @@ $('button.add').on('click', function(){
 	});
 	//svg.call(zoom);
 
-	
+/* ----  word animation ---*/
+$(function() {
+
+    changer();
+});
+
+function changer() {
+    var words = ["creative","inventive","experimental","imaginative"];
+    var idx = Math.floor(words.length * Math.random());
+    $('#change').text(words[idx]).show('slow');
+    var time = Math.floor(2000);
+    setTimeout(changer,time);
+}
