@@ -1,6 +1,8 @@
 /*
-	main background (yellow): #e9d654;
-
+	green: DEFAED;
+	gray: FCFCFC;
+	pink: E4B04A;
+	brown: C77826;
 */
 
 @font-face {
@@ -44,7 +46,6 @@
 body {
     font-family: 'Vollkorn','Brandon Medium', Helvetica, Arial, sans-serif;
     color: #333;
-    background-color: #DEFAED; 
     font-size: 1em; 
     line-height: 1em;
 	padding: 0; 
@@ -54,7 +55,8 @@ body {
     background-image:    -moz-linear-gradient(top, #DEFAED, #FFF);
     background-image:     -ms-linear-gradient(top, #DEFAED, #FFF);
     background-image:      -o-linear-gradient(top, #DEFAED, #FFF);
-    border: 1em solid #FFF;
+    border: 1em solid #FCFCFC;
+    font: 100%;
 }
 
 a {
@@ -72,13 +74,8 @@ ul {
 
 h1{
 	font: 2em/1em 'Vollkorn',sans-serif;
-	margin: 0.03em auto;
-	padding: 0 0 0.5em;
+	margin: 0 auto;
 	letter-spacing: 2px;
-	/*
-	border-bottom: 0.05em dotted #333;
-	border-top: 0.02em solid #333;
-	*/
 }
 
 h3{
@@ -105,15 +102,19 @@ h3{
 
 .main,
 .container > header {
-	width: 100%;
-	margin: 0em auto;
-	padding: 0 1em 1em 1em;
-	background-color: #FFF;
+	font-family: 'Vollkorn';
 }
-
 	.container > header {
-		padding: 2.875em 2.875em 0em;
+		padding: 2em 2em 1em;
 		text-align: center;
+		position: fixed;
+		z-index: 2;
+		background: #DEFAED;
+		width: 100%;
+		top: 0;
+    	border-top: 1em solid #FCFCFC;
+    	border-right: 2em solid #FCFCFC;
+    	border-bottom: 0.5em solid #FCFCFC;
 	}
 
 	.container > header h1 span{
@@ -123,9 +124,8 @@ h3{
 	.container > header h4 {
 		font-size: 1em;
 		letter-spacing: 0.1em;
-		margin: 1em 0.6em;
+		margin: 1em 2em;
 		font-weight: 400;
-		margin-left: 2em;
 	}
 		.container > header h4 span {
 			border-bottom: 1px solid #333;
@@ -139,7 +139,7 @@ h3{
 		height: 2em;
 		background: #F0F0F0;
 		border-radius: 50%;
-		margin: 1em 0.5em 1em;
+		margin: 0em 0.5em 1em;
 		border: none;
 		color: #333;
 	}
@@ -153,7 +153,6 @@ h3{
 		content: attr(data-info);
 		color: #333;
 		position: absolute;
-		width: 100%;
 		top: 100%;
 		text-align: left;
 		pointer-events: none;
@@ -178,78 +177,73 @@ h3{
 		line-height: 2em;
 	}
 
-
-.bp-icon-next:after {
-}
-.bp-icon-drop:after {
-}
-.bp-icon-archive:after {
-}
-.bp-icon-about:after {
-}
-.bp-icon-prev:after {
-}
-
-
-
 /*------------ Main Page Slider ---------------*/
 .bg-slider{
-	background-color: #DEFAED;
 	position: relative;
-	min-height: 350px;
+	margin: 9em auto 0 auto;
+	height: auto;
 }
-.bg-slider p{
-	font-family: 'Brandon Black Italic',sans-serif;
-	color: #333;
+.bg-slider p.headline{
+	font-family: 'Vollkorn',sans-serif;
+	color: #C77826;
 	text-align: center;
 	font-size: 2em;
 	letter-spacing: 3px;
+	padding: 0 0 2em 0;
+	border-bottom: 2px solid #FCFCFC;
+}
+.bg-slider p.headline span#change{
+	width: 210px;
+	min-width: 200px;
 	padding: 0.5em 0;
+	border: 2px solid #C77826;
 }
 
 .bg-slider .recipe{
-	margin: 0em auto;
+	margin: 2em auto;
 	text-align: center;
 	width:80%;
 }
 
 .bg-slider .recipe img{
 	width: 275px;
-	height: 320px;
-	padding: 1em;
+	height: 300px;
+	margin-right: 2em;
 }
 
 .bg-slider .recipe  p.tip {
-	font-family: 'Brandon Medium',sans-serif;
+	font-family: 'Brandon Black',sans-serif;
 	color: #333;
-	font-size: 2em;
+	font-size: 1.4em;
 	text-align: left;
-	margin: 0 auto;
 	line-height: 1em;
-	padding: 0;
+	padding-top: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
 }
 	.bg-slider .recipe p.tip span{
-		font-family: 'Brandon Black Italic',sans-serif;
-		color: #FA5858;
+		font-family: 'Vollkorn',sans-serif;
+		color: #C77826;
+		font-size: 1em;
 	}
 
 .bg-slider .recipe p.tip-details{
 	font-family: 'Vollkorn',sans-serif;
-	font-size: 1.5em;
 	color: #333;
 	text-align: left;
 	margin: 0 auto;
-	padding: 1em 0;
 	padding-right: 4em;
-	line-height: 1.2em;
-	text-indent: 2em;
-	letter-spacing: 2px;
-	font-size: 1em;
+	line-height: 1.3em;
+	letter-spacing: 1px;
+	font-size: 1.3em;
 }
 
 .bg-slider .recipe .link{
-	color: #FA5858;
+	color: #C77826;
 	margin: 1em auto;
+	font-family: 'Vollkorn',sans-serif;
+
 }
 
 .bg-slider .recipe .link:hover{
@@ -257,44 +251,47 @@ h3{
 }
 
 /*------- Link bar for slider ---------*/
-.bg-slider  #recipe-selector {
+#recipe-selector {
   overflow: hidden;
-  position: absolute;
-  height: 32px;
-  bottom: 1em;
-  left: 30%;
-  margin: 0 auto;
+  position: relative;
+  height: 36px;
+  top: 1em;
+  text-align: center;
+
 }
 
-.bg-slider #recipe-selector em { 
-  padding: 8px 20px 0 100px; 
-  display: inline-block;
+#recipe-selector em { 
+  padding: 8px 0 0 100px; 
+  display: inline;
   float: left;
+  margin-left: 30%;
+  margin-right: 0;
   color: #333;
   font-family: 'Vollkorn', serif;
 
 }
+#recipe-selector nav{
+	margin: 0 auto;
+    padding-bottom: 1em;
 
-.bg-slider  #recipe-selector nav a{
-  width: 3.5em;
-  height: 3.5em;
-  float: left;
-  padding-right: 25px;
-  padding-top: 1px;
-  background: url(../images/sprite-project-overview-nav.png) -167px -81px no-repeat;
+}
+#recipe-selector nav a{
+  width: 2em;
+  height: 2em;
+  background: #FCFCFC;
+  margin-right: 1em;
+  border-radius: 50%;
   display: inline-block;
   font-family: 'Vollkorn', sans-serif,monospace;
   font-size: 1em;
-  line-height: 1.6em;
+  line-height: 2em;
   color: #333;
-  margin: 0 auto;
 
 }
 
-.bg-slider  #recipe-selector a.activeSlide, #recipe-selector a:hover{  
-  background: url(../images/sprite-project-overview-nav.png) -167px -44px no-repeat;
+#recipe-selector a.activeSlide, #recipe-selector a:hover{  
+  background: #C77826;
   color: #F0F0F0;
-  margin: 0 auto;
 }
 
 #Tip-2,#Tip-3,#Tip-4{
@@ -305,7 +302,7 @@ h3{
 
 .options {
 	text-align: right;
-	padding-bottom: 10px;
+	padding: 1em 0;
 }
 
 	.options a {
@@ -314,7 +311,7 @@ h3{
 		height: 40px;
 		overflow: hidden;
 		white-space: nowrap;
-		color: #e9d654;
+		color: #C77826;
 		margin: 2px;
 	}
 
@@ -380,23 +377,27 @@ h3{
 
 .title {
 	font-family: "Vollkorn",sans-serif;
-	font-size: 0.8em;
+	font-size: 0.5em;
+	text-transform: uppercase;
+
 }
 
 .region {
-	color: #333;
+	color: #848484;
 	content: none;
 	margin: 0 auto;
 	text-align: center;
-	font-family: 'Brandon Medium',sans-serif;
-	font-size: 12px;
-	text-transform: uppercase;
+	font-size: 0.8em;
+	font-family: 'Brandon Medium';
 	letter-spacing: 3px;
+	text-transform: uppercase;
+
+
 }
 
 .details{
 	font-size: 1em;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 
 .add {
@@ -407,11 +408,13 @@ h3{
 	margin: 20px 0 0;
 	display: inline-block;
 	transition: background 0.2s;
+	font-family: 'Brandon Medium';
+	border: none;
 }
 
 	.add:hover {
 		color: #fff;
-		background: #333;
+		background: #C77826;
 	}
 
 	.add:before {
@@ -460,7 +463,7 @@ h3{
 }
 
 .view-grid .title {
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .view-grid .details {
@@ -471,7 +474,7 @@ h3{
 } 
 
 .view-grid .region {
-	margin: 10px 0;
+	margin-bottom: 1em;
 
 }
 
@@ -495,7 +498,7 @@ h3{
 }
 
 .view-list .title {
-	font-size: 1.5em;
+	font-size: 1em;
 	padding: 0 20px;
 	white-space: normal;
 	width: 10%;
@@ -568,37 +571,34 @@ div.tooltip {
 
 /*---- CALL FOR ENTRIES -------------*/
 .call{
-	background-color: #333;
-	min-height: 500px;
+	min-height: 400px;
 	margin: 1em auto;
 	text-align: center;
 	color: #FFF;
+	background-color: #C77826;
+	padding: 2em;
 }
 
 .call p{
-	font-family: 'Brandon Black',sans-serif;
-	color: #F0F0F0;
+	font-family: 'Brandon Medium',sans-serif;
 	font-size: 4em;
-	letter-spacing: 3px;
-	padding-top: 1em;
+	letter-spacing: 1px;
+}
+
+.call p.details{
+	font-family: 'Vollkorn',serif;
+	font-size: 1.5em;
+	text-transform: none;
+	line-height: 1.3em;
+	width: 70%;
+	margin: 0 auto;
 }
 
 	.call > p.details > span{
 		font-family: 'Vollkorn',serif;
-		font-size: 2em;
-		color: #e9d654;
-		padding: 2em 0;
+		color: #333;
+		margin: 1em 0;
 	}
-
-.call p.details{
-	font-family: 'Vollkorn',serif;
-	font-size: 1.2em;
-	padding: 1em 5em;
-	text-transform: none;
-	line-height: 1.5em;
-	width: 80%;
-	margin: 0 auto;
-}
 
 .call .add{
 	background-color: #fff;
@@ -611,6 +611,19 @@ div.tooltip {
 	color: #FFF;
 }
 
+
+
+
+
+
+
+
+
+
+.main {
+	margin-top: 2em;
+	border-top: 2px solid #fff;
+}
 .main .herb-data{
 	display: none;
 	background-color: #F0F0F0;
