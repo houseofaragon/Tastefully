@@ -1,0 +1,21 @@
+
+
+403 error fix
+http://www.coolestguidesontheplanet.com/403-forbidden-error-wordpress-htaccess/
+
+chmod writeable:
+http://stackoverflow.com/questions/1070216/how-do-i-make-directory-writable
+
+change directory of your site:
+	www.karen.com/wordpress to www.karen.com/blog
+
+	go to -> settings -> general -> change url 
+	
+
+
+TO DO:
+
+	makes pages for
+	basil
+	mint
+	oregano
