@@ -180,7 +180,7 @@ h3{
 /*------------ Main Page Slider ---------------*/
 .bg-slider{
 	position: relative;
-	margin: 9em auto 0 auto;
+	margin: 1em auto 0 auto;
 	height: auto;
 }
 .bg-slider p.headline{
@@ -189,12 +189,13 @@ h3{
 	text-align: center;
 	font-size: 2em;
 	letter-spacing: 3px;
-	padding: 0 0 2em 0;
+	padding: 2em 0 2em 0;
+	border-top: 2px solid #FCFCFC;
 	border-bottom: 2px solid #FCFCFC;
 }
 .bg-slider p.headline span#change{
-	width: 210px;
-	min-width: 200px;
+	width: 230px;
+	min-width: 230px;
 	padding: 0.5em 0;
 	border: 2px solid #C77826;
 }
@@ -568,6 +569,37 @@ div.tooltip {
 	padding-right: 1em;
 }
 
+#tree {
+	margin: 6em 0 0;
+}
+
+#tree p{
+	position: absolute;
+	right: 60px;
+	top: 12em;
+	width: 200px;
+}
+
+#tree p span{
+	padding: 2px;
+	font-size: 2em;
+	border-bottom: 2px solid #fff;
+
+}
+.node circle:hover {
+  cursor: pointer;
+  fill: #C77826;
+}
+
+.node text {
+  font-size: 15px;
+}
+
+path.link {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+}
 
 /*---- CALL FOR ENTRIES -------------*/
 .call{
