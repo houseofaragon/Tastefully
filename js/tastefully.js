@@ -8,7 +8,8 @@
 /*---------------- MAIN PAGE: slideshow --------------------- */
 /* main content slider */
 $(document).ready(function(){
-	$("#recipe-selector nav a").click(function() {
+	$("#recipe-selector nav a").click(function(e) {
+		e.preventDefault();
 		$("#recipe-selector nav a").removeClass();
 		$(this).addClass("activeSlide");
 		var tipID = "#Tip-"+$(this).html();
@@ -16,6 +17,7 @@ $(document).ready(function(){
 			$(tipID).fadeIn(500);
 			$(tipID).addClass("current");
 		});		
+		$()
 	});
 });
 
