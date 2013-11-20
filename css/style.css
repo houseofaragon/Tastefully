@@ -586,21 +586,20 @@ div.tooltip {
 }
 
 .call p.details{
-	font-family: 'Brandon Medium',serif;
-	font-size: 1em;
-	padding: 1em 5em;
+	font-family: 'Vollkorn',serif;
+	font-size: 1.5em;
+	padding: 1em 6em;
 	text-transform: none;
-	line-height: 1.5em;
+	line-height: 1.3em;
 	width: 80%;
 	margin: 0 auto;
 }
 
 	.call > p.details > span{
 		font-family: 'Vollkorn',serif;
-		font-size: 1em;
-		color: #e9d654;
+		font-size: 1.5em;
+		color: #C77826;
 		margin: 1em 0;
-		margin-bottom: 1em;
 	}
 
 .call .add{
