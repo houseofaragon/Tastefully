@@ -1,7 +1,7 @@
 
 var m = [20, 120, 20, 120],
     w = 1280 - m[1] - m[3],
-    h = 700 - m[0] - m[2],
+    h = 650 - m[0] - m[2],
     i = 0,
     root;
 
@@ -64,7 +64,7 @@ function update(source) {
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
       .on("click", function(d) { toggle(d); update(d);})
-      
+
   
   nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
