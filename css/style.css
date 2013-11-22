@@ -3,6 +3,7 @@
 	gray: FCFCFC;
 	pink: E4B04A;
 	brown: C77826;
+	brown-dark: #9c5e1e;
 */
 
 @font-face {
@@ -118,7 +119,6 @@ h3{
 	}
 
 	.container > header h1 span{
-		font-family: 'Brandon Black Italic',sans-serif;
 	}
 
 	.container > header h4 {
@@ -180,7 +180,7 @@ h3{
 /*------------ Main Page Slider ---------------*/
 .bg-slider{
 	position: relative;
-	margin: 1em auto 0 auto;
+	margin: 0 auto;
 	height: auto;
 }
 .bg-slider p.headline{
@@ -577,7 +577,8 @@ div.tooltip {
 	position: absolute;
 	right: 60px;
 	top: 12em;
-	width: 200px;
+	width: 300px;
+	background-color: #DEFAED;
 }
 
 #tree p span{
