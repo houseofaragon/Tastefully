@@ -27,7 +27,7 @@ var herb_list_two = ['dill', 'sage', 'rosemary', 'parsely'];
 function loadHerbList(name, herb_list){
 	for(herb in herb_list){
 		$('ul#'+name).append(
-			'<li> <a class="image" href="subpage.html"><img src="images/' + herb_list[herb] +'.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><a class="icon add" href="blog/all-about-' + herb_list[herb] +'">Get Creative</a></li>'
+			'<li> <a class="image" href="blog/all-about-' + herb_list[herb] +'"><img src="images/' + herb_list[herb] +'.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><a class="icon add" href="blog/all-about-' + herb_list[herb] +'">Get Creative</a></li>'
 		);
 	}
 }
@@ -73,14 +73,14 @@ $('button.add').on('click', function(){
 /*---------------- MAIN PAGE: d3 map --------------------- */
 
 //http://techslides.com/d3-world-maps-tooltips-zooming-and-queue/
-	var width = 960,
+	var width = 1024,
 	  	height = 500;
 
 	var projection = d3.geo.mercator()
 		//two-element array of longitude and latitude in degrees [0,0]
-		.translate([480, 300])
+		.translate([480, 400])
 	    .center([0, 0])
-	    .scale(150)
+	    .scale(250)
 	    //.rotate([-180,0]);
 
 	var svg = d3.select("#map")
@@ -129,7 +129,7 @@ $('button.add').on('click', function(){
 	           		tooltip.style("visibility", "visible");
   					tooltip.style("left", (d3.event.pageX + 10) + "px");
   					tooltip.style("top", (d3.event.pageY - 40) + "px");    
-  					tooltip.html('<img class="left small-img" src="images/basil.png"/> ' +d.city + ','+ d.country + '<br/> - - - <br/>'+ d.desc );
+  					tooltip.html('<img class="left small-img" src="images/basil.png"/> ' +d.city + ' - '+ d.country + '<br/> - - - <br/>'+ d.desc );
 	           		return tooltip;
 	           	})
 	           .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
