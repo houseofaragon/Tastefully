@@ -1,12 +1,15 @@
 code,city,country,desc,lat,lon
-ZNZ,ZANZIBAR,TANZANIA,This is where we originate from and how all of the stuff with would like to do is stated,-6.13,39.31
-TYO,TOKYO,JAPAN,This is where we originate from,35.68,139.76
-AKL,AUCKLAND,NEW ZEALAND,This is where we originate from,-36.85,174.78
-BKK,BANGKOK,THAILAND,Thai Basil is found in many south asian dishes.,13.75,100.48
-DEL,DELHI,INDIA,29.01,This is where we originate from,77.38
-SIN,SINGAPORE,SINGAPOR,This is where we originate from,1.36,103.75
-BSB,BRASILIA,BRAZIL,This is where we originate from,-15.67,-47.43
-RIO,RIO DE JANEIRO,BRAZIL,This is where we originate from,-22.90,-43.24
-YTO,TORONTO,CANADA,This is where we originate from,43.64,-79.40
-SEA,SEATTLE,USA,This is where we originate from,47.61,-122.33
-IND,INDIA,INDIA,Basil is said to originate from both India and Southern Asia,21.00,78.00
+IND,BASIL, INDIA,"Along with Egypt, Basil is said to originate from both India and Southern Asia",21.00,78.00
+EGP,MINT, EGYPT,"Mint is said to originate from Egypt", 26.00,29.00
+EGP,BASIL, EGYPT,"Along with India and Southern Asia, Basil is said to originate from Egypt", 26.00,32.00
+FRA,DILL, FRANCE,"Along with England and Germany, Dill is said to originate from France", 47.00,2.00
+GRM,DILL, GERMANY,"Along with France and England, Dill is said to originate from Germany", 51.51,9.91
+GRM,DILL, ENGLAND,"Along with France and Germany, Dill is said to originate from Germany", 52.48,-2.13
+GRM,OREGANO, Turkey,"Oregano, often associated with pizza, is said to originate from Turkey", 39.16,35.66
+GRM,SAGE, Turkey,"Sage is said to originate from Turkey", 39.16,32.66
+FRA,PARSELY, FRANCE,"Along with England and Germany, Parsely is said to originate from France", 44.00,2.00
+GRM,PARSELY, GERMANY,"Along with France and England, Parsely is said to originate from Germany", 49.51,9.91
+GRM,PARSELY, ENGLAND,"Along with France and Germany, Parsely is said to originate from Germany", 53.48,0.13
+TUN,ROSEMARY, TUNISIA,"Along with Morocco, Rosemary is said to originate from Tunisia", 34.00,9.00
+MOR,ROSEMARY, MOROCCO,"Along with Tunisia, Rosemary is said to originate from Morocco", 32.00,-5.00
+MOR,THYME, POLAND,"Thyme is said to originate from Poland", 52.21,21.00
