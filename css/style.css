@@ -210,6 +210,7 @@ h3{
 	width: 275px;
 	height: 300px;
 	margin-right: 2em;
+	border-right: 2px solid #fff;
 }
 
 .bg-slider .recipe  p.tip {
