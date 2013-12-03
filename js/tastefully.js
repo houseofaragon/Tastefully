@@ -22,19 +22,29 @@ $(document).ready(function(){
 });
 
 /* ----------- MAIN PAGE: load list of herbs  ------------------*/
-var herb_list_one = ['basil', 'mint', 'oregano', 'thyme', 'cilantro'];
-var herb_list_two = ['dill', 'sage', 'rosemary', 'parsely'];
-function loadHerbList(name, herb_list){
-	for(herb in herb_list){
-		$('ul#'+name).append(
-			'<li> <a class="image" href="blog/all-about-' + herb_list[herb] +'"><img src="images/' + herb_list[herb] +'.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><a class="icon add" href="blog/all-about-' + herb_list[herb] +'">Get Creative</a></li>'
+/*var herb_list_one = ['basil', 'mint', 'oregano', 'thyme', 'cilantro','dill', 'sage', 'rosemary', 'parsely'];
+var herb_list_one = ['basil', 'mint', 'oregano', 'thyme', 'cilantro','dill', 'sage', 'rosemary', 'parsely'];
+*/
+var herb_list_one ={ 
+     basil:["basil", "South East Asia" , "Goes great with Italian dishes or Asian dishes and easy to grow."], 
+     mint:["mint","Mediterranean" ,"From toothpaste to tea, one of the most versatile herbs around."], 
+     oregano:["oregano" ,"Mediterranean", "Pizza wouldn't be the same without this herb."],
+     thyme:["thyme","Mediterranean", "Spray around doorways and windows in summer to repel insects."],
+     cilantro:["cilantro" ,"Mediterranean", "Easily confused with flat-leaf parsley in appearance, so be sure to sniff carefully. "],
+     dill:["dill","Mediterranean", "Dill is a carminative, aromatic, anti-spasmodic, galactogogue."],
+     sage:["sage","Mediterranean", "The desire of sage is to render man immortal."],
+     rosemary:["rosemary","Mediterranean", "As for rosemary, I let it run all over my garden walls."],
+     parsely:["parsely","Mediterranean", "A great deal of the best European cooking is unthinkable without parsley"]
+
+};
+
+	for(var key in herb_list_one){
+		$('ul#herb_list_one').append(
+			'<li> <a class="image" href="blog/all-about-' + herb_list_one[key][0]+'"><img src="images/' + herb_list_one[key][0]+'.png"></img></a><h4 class="title">' + herb_list_one[key][0] +'</h4><div class="region">'+ herb_list_one[key][1]+'</div><div class="details">'+ herb_list_one[key][2]+ '</div><a class="icon add" href="blog/all-about-'+ herb_list_one[key][0] +'">Get Creative</a></li>'
 		);
 	}
-}
-var herb_one_name='herb_list_one';
-var herb_two_name='herb_list_two';
-loadHerbList(herb_one_name, herb_list_one);
-loadHerbList(herb_two_name, herb_list_two);
+
+
 
  /* ----------- SUB PAGES: append data  ------------------*/
 
