@@ -14,38 +14,42 @@ require('./wp-blog-header.php');
 	<link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
 	<link href="css/reset.css" type="text/css" rel="stylesheet"/>
 	<link href="css/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/fonts.css" type="text/css" rel="stylesheet"/>
 	<link href="css/style.css" type="text/css" rel="stylesheet"/>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 <head>
 	<body>
+	<div id="previous_project">
+	  <div class="prev_text">
+	    <a href="../index.html">Prev </a>
+	  </div>
+	  <div class="prev_note"> < </div>
+	</div>
+	<div id="next_project">
+	  <div class="next_note"> > </div>
+	  <div class="next_text">
+	    <a href="../dengine/index.html">Next</a>
+	  </div>
+	</div>
 	<div class="container">
 <!-- Header Content -->
 		<header class="clearfix">
-		<h1 class="left" ><a href="index.html"> <span>Tasteful</span>.ly </a></h1> 
+		<h1 class="left"><a href="index.html"> <span>Tastefully</a></h1> 
 		<!-- Main Navigation -->
 			<nav class="right" >
-				<a class="bp-icon" data-info="Recipes" href="#recipe"> 
-					<i class="fa fa-pagelines"></i>  
+				<a data-info="Data Visualizations" href="#visualization"> Map</a>
+				<a data-info="Blog" href="blog/"> Blog
 				</a>
-				<a class="bp-icon " data-info="Data Visualizations" href="#visualization"> 
-					<i class="fa fa-bar-chart-o"></i>  
- 				</a>
-				<a class="bp-icon" data-info="Blog" href="blog/">
-					<i class="fa fa-pencil"></i>  
-				</a>
-				<a class="bp-icon" data-info="Contact" href="#visualization"> 
-					<i class="fa fa-envelope"></i>  
+				<a data-info="Contact" href="#call"> Contact
 				</a>
 			</nav>
-		<h4 class="left" > <i>tasteful herbs for herbal nerds</i> </h4> 
+		<h4 class="left"> <em>tasteful herbs for herbal nerds</em> </h4> 
 
 		</header>
 <!-- Rotating Info -->
-	<div class="clearfix" id="tree">
-		<p><span>Herb Pairings</span><br/><br/><br/>The graph to the left is a great primer into the world of herbs, giving you ideas of what foods I like to pair herbs with when I cook with them at home. It's definitely not an exhaustive list, and I'm always interested in what others are doing with them too. I'm constantly learning.</p>
-	</div>
 
+<!--
 	<div class="clearfix bg-slider" >
 
 		<p class="headline"> Get <span id="change"><i>Creative</i></span> with your favorite herbs. </p>
@@ -95,7 +99,7 @@ require('./wp-blog-header.php');
 			<a href="#"  class="" id="tip4">4</a>
 		</nav>
 	</div>
-
+-->
 <!-- Switcher -->
 	<div class="main">
 
@@ -104,8 +108,14 @@ require('./wp-blog-header.php');
 				<a href="#" class="icon grid selected" data-view="view-grid">Grid View</a>
 				<a href="#" class="icon list" data-view="view-list">List View</a>
 			</div>
-<!-- Main List -->
 			<ul id="herb_list_one"></ul>
+			<ul id="herb_list_two"></ul>
+<!-- Main List -->
+
+	<div class="clearfix" id="tree">
+		<p><span>Herb Pairings</span><br/><br/><br/>The graph to the left is a great primer into the world of herbs, giving you ideas of what foods I like to pair herbs with when I cook with them at home. It's definitely not an exhaustive list, and I'm always interested in what others are doing with them too. I'm constantly learning.
+		</p>
+	</div>
 			<div class="herb-data"></div>
 
 <!-- D3 Map -->	
@@ -114,7 +124,6 @@ require('./wp-blog-header.php');
 				<p> Click around to discover where herbs originate from </p>
 				<div id="map"></div>
 			</div>
-			<ul id="herb_list_two"></ul>
 		</div>
 
 	</div><!-- /main -->
